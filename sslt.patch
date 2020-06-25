@@ -1,0 +1,38 @@
+--- ../sslt.h	2020-06-24 00:24:37.038236000 +0000
++++ /usr/include/nss3/sslt.h	2020-06-24 00:25:51.740276000 +0000
+@@ -32,7 +32,7 @@
+     ssl_hs_certificate_status = 22,
+     ssl_hs_key_update = 24,
+     ssl_hs_next_proto = 67,
+-    ssl_hs_message_hash = 254, /* Not a real message. */
++    ssl_hs_message_hash = 254 /* Not a real message. */
+ } SSLHandshakeType;
+ 
+ typedef enum {
+@@ -45,7 +45,7 @@
+ 
+ typedef enum {
+     ssl_secret_read = 1,
+-    ssl_secret_write = 2,
++    ssl_secret_write = 2
+ } SSLSecretDirection;
+ 
+ typedef struct SSL3StatisticsStr {
+@@ -156,7 +156,7 @@
+      * This is reported as a signature scheme when TLS 1.0 or 1.1 is used.
+      * This should not be passed to SSL_SignatureSchemePrefSet(); this
+      * signature scheme is always used and cannot be disabled. */
+-    ssl_sig_rsa_pkcs1_sha1md5 = 0x10101,
++    ssl_sig_rsa_pkcs1_sha1md5 = 0x10101
+ } SSLSignatureScheme;
+ 
+ /* Deprecated names maintained only for source compatibility. */
+@@ -477,7 +477,7 @@
+     ssl_next_proto_nego_xtn = 13172, /* Deprecated. */
+     ssl_renegotiation_info_xtn = 0xff01,
+     ssl_tls13_short_header_xtn = 0xff03, /* Deprecated. */
+-    ssl_tls13_encrypted_sni_xtn = 0xffce,
++    ssl_tls13_encrypted_sni_xtn = 0xffce
+ } SSLExtensionType;
+ 
+ /* This is the old name for the supported_groups extensions. */
