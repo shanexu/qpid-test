@@ -24,3 +24,4 @@ RUN patch /usr/include/nss3/sslt.h sslt.patch
 
 RUN cd qpidc-0.20/ && make all && make install
 
+CMD /opt/qpid/sbin/qpidd --auth no
